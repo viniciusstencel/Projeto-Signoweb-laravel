@@ -1,0 +1,134 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(49, 49, 49); 
+
+    
+}
+
+.div { 
+    max-width: 500px;
+    margin: auto;
+    background: #043cec;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #242424;
+    top: 20;
+    padding: 20px;
+  }
+
+  :focus{outline: none;}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.label { 
+    float: left; 
+    width: 100%; 
+    margin-bottom: 25px; 
+    position: relative;
+    color: whitesmoke;
+  }
+
+  
+.input-bordas{
+  
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color: #333; 
+    width: 100%; 
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+    border: 1px solid #043cec; 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+  }
+
+  .textarea { resize:none!important; }
+  .input-bordas ~ .focus-border:before,
+  .input-bordas ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
+  .input-bordas ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+  .input-bordas ~ .focus-border i:before,
+  .input-bordas ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
+  .input-bordas ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+  .input-bordas:focus ~ .focus-border:before,
+  .input-bordas:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+  .input-bordas:focus ~ .focus-border:after{transition-delay: 0.2s;}
+  .input-bordas:focus ~ .focus-border i:before,
+  .input-bordas:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+  .input-bordas:focus ~ .focus-border i:after{transition-delay: 0.4s;}
+
+  .button-form { 
+    background-color: #043cec;
+    padding: 0.5em 1.3em;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+  }
+  .borda-inversa {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 2px #39f, 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+    
+    background: none;
+    color:#043cec; 
+  }
+
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button-form {
+    padding: 8px 16px;
+    background-color: #39f;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.button-form:hover, .button-form:focus, .button-form:active {
+    background: none;
+    color: #39f;
+    box-shadow: inset 0 0 0 2px #39f, 0 0 1px rgba(0, 0, 0, 0);
+}
+.button-form + br {
+  background-color: #242424; 
+  height: 10px; 
+  margin: 5px 0; 
+}
